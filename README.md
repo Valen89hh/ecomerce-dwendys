@@ -3,6 +3,9 @@
 
 📩 email: valvasvarodri@gmail.com
 
+## Diseño de la pagina
+Figma: https://www.figma.com/file/5dHHxbJC414jERTg6RxgM9/Ecommerce-Website-Design-(Community)-(Copy)?type=design&node-id=22%3A474&mode=design&t=zFf9dZpRa1WJ4GEx-1
+
 
 ## Getting Started
 
