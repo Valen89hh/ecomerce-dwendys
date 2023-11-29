@@ -2,26 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap");
+
+.bg-primary {
+  background-color: #008ecc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.primary {
+  color: #008ecc;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text {
+  color: #666666;
+}
+
+.HEading {
+  color: #222222;
+}
+
+.light {
+  color: #8888;
+}
+
+.line {
+  border-color: #d9d9d9;
+}
+
+.border {
+  background-color: #ededed;
+}
+
+.background-1 {
+  background-color: #f5f5f5;
+}
+
+.background-2 {
+  background-color: #f6f6fc;
+}
+
+.background-3 {
+  background-color: #f3f9fb;
+}
+
+.yello-1 {
+  color: #e3bc01;
+}
+
+.font-title {
+  font-family: "Aref Ruqaa Ink", serif;
 }
