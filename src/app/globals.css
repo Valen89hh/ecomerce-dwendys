@@ -28,7 +28,7 @@
   border-color: #d9d9d9;
 }
 
-.border {
+.color-border {
   background-color: #ededed;
 }
 
@@ -50,4 +50,9 @@
 
 .font-title {
   font-family: "Aref Ruqaa Ink", serif;
+}
+
+/* Animation Sidebar */
+
+.sidebar-animation {
 }

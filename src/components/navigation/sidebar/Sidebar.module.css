@@ -1,0 +1,49 @@
+.content {
+  position: relative;
+  width: 18rem;
+  height: 100vh;
+  background-color: white;
+  transition: transform 1s ease-in-out;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.closed {
+  transform: translateX(-72px);
+}
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sidebar-open {
+  animation: slideIn 0.3s ease-in-out forwards;
+}
+
+.sidebar-closed {
+  animation: slideOut 0.3s ease-in-out forwards;
+}
