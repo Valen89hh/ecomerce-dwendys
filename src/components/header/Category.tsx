@@ -26,12 +26,12 @@ const Category: React.FC<CategoryProps> = ({
       name={name}
       id=""
       className={`${
-        isSelected ? "bg-[#008ECC] text-white" : "background-3 HEading"
+        isSelected ? "bg-primary text-white" : "background-3 HEading"
       } 
       block
        text-sm px-3.5 py-2.5 rounded-[18px]
        
-       focus:bg-[#008ECC] 
+       focus:bg-primary 
        focus:outline-none
        focus:ring
        focus:text-white`}

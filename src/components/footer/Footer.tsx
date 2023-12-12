@@ -28,21 +28,21 @@ function Footer() {
     <footer className="bg-primary text-white">
       <ContainerCenter space="space-x-2">
         <IconContact>
-          <FacebookIcon className="group-hover:text-[#1877f2]" />
+          <FacebookIcon className="group-hover:text-facebook" />
         </IconContact>
         <IconContact>
-          <WhatsAppIcon className="group-hover:text-[#25D366]" />
+          <WhatsAppIcon className="group-hover:text-whatsapp" />
         </IconContact>
         <IconContact>
-          <TwitterIcon className="group-hover:text-[#1DA1F2]" />
+          <TwitterIcon className="group-hover:text-twitter" />
         </IconContact>
         <IconContact>
-          <InstagramIcon className="group-hover:text-[#fd9644]" />
+          <InstagramIcon className="group-hover:text-instagram" />
         </IconContact>
       </ContainerCenter>
 
       <Container>
-        <Divider color="bg-[#0C9BDA]" />
+        <Divider color="bg-primary-variant" />
 
         <div className="py-10 space-y-5 grid grid-cols-1 md:grid-cols-2 md:space-y-0">
           <div className="px-4 ">
@@ -92,7 +92,7 @@ function Footer() {
             />
           </div>
         </div>
-        <Divider color="bg-[#05ABF3]" />
+        <Divider color="bg-primary-light" />
       </Container>
       <div className="text-center py-5">
         <span className={`text-md  ${roboto.className}`}>

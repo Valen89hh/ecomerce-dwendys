@@ -1,31 +1,33 @@
-import CloseIcon from "@mui/icons-material/Close";
 import { useSidebarContext } from "@/context/SidebarProvider";
 import styles from "./Sidebar.module.css";
 
+type StyleActive = {
+  open: string;
+  closed: string;
+};
+
 interface ContentSideProps {
   children: React.ReactNode;
+  activeStyle?: StyleActive;
+  state: boolean;
+  actived: (param: boolean) => void;
+  customStyle?: string;
 }
 
-const ContentSide: React.FC<ContentSideProps> = ({ children }) => {
-  const { open, setOpen } = useSidebarContext();
-
+const ContentSide: React.FC<ContentSideProps> = ({
+  children,
+  activeStyle = { open: "sidebar-open", closed: "sidebar-closed" },
+  state,
+  actived,
+  customStyle = "",
+}) => {
   return (
     <div
+      onClick={(e) => e.stopPropagation()}
       className={`${styles.content} ${
-        open ? styles["sidebar-open"] : styles["sidebar-closed"]
-      }`}
+        state ? styles[activeStyle.open] : styles[activeStyle.closed]
+      } h-full ${customStyle}`}
     >
-      <div
-        onClick={() => setOpen(false)}
-        className="absolute
-         -right-8 top-1 group 
-         cursor-pointer rounded-full
-           hover:bg-white
-           transition
-           ease-in-out"
-      >
-        <CloseIcon className=" text-white group-hover:text-[#008ecc]" />
-      </div>
       {children}
     </div>
   );

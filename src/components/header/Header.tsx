@@ -19,6 +19,7 @@ const Header = () => {
         <Container>
           <ListCategories />
         </Container>
+        <Divider size="h-[2px] hidden sm:block" />
       </header>
     </SidebarProvider>
   );

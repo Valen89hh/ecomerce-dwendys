@@ -17,13 +17,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSideBar }) => {
       <div className="flex items-center justify-between ">
         <div className="flex items-center space-x-1">
           <div
-            className="p-1 cursor-pointer rounded-md background-3 block sm:hidden"
+            className="p-1 cursor-pointer rounded-md bg-background-3 block sm:hidden"
             onClick={() => setOpen(true)}
           >
-            <DragHandleIcon className="primary" />
+            <DragHandleIcon className="text-primary" />
           </div>
           <Link href="/">
-            <h1 className={"font-title text-center primary text-[1.5rem]"}>
+            <h1 className={"font-title text-center text-primary text-[1.5rem]"}>
               D-wendys
             </h1>
           </Link>
@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSideBar }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-5 h-5 primary"
+              className="w-5 h-5 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSideBar }) => {
                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
               />
             </svg>
-            <span className="text-sm font-bold text hidden md:block">
+            <span className="text-sm font-bold text-secondary hidden md:block">
               Sing In
             </span>
           </div>
@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSideBar }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-5 h-5 primary"
+              className="w-5 h-5 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -66,7 +66,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSideBar }) => {
               />
             </svg>
 
-            <span className="text-sm font-bold text hidden md:block">Cart</span>
+            <span className="text-sm font-bold text-secondary hidden md:block">
+              Cart
+            </span>
           </div>
         </div>
       </div>

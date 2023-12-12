@@ -1,8 +1,7 @@
 .content {
   position: relative;
-  width: 18rem;
   height: 100vh;
-  background-color: white;
+
   transition: transform 1s ease-in-out;
 }
 
@@ -24,7 +23,7 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
   to {
     transform: translateX(0);
@@ -36,8 +35,54 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
+}
+
+@keyframes slideIn-right {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+
+@keyframes hiddenSide {
+  from {
+    display: block;
+  }
+
+  to {
+    display: none;
+  }
+}
+
+.open-expand-category {
+  max-height: 1000px; /* Ajusta según sea necesario */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.close-expand-category {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hidden-sidden {
+  animation: hiddenSide 0.3s ease-in-out forwards;
 }
 
 .sidebar-open {
@@ -46,4 +91,12 @@
 
 .sidebar-closed {
   animation: slideOut 0.3s ease-in-out forwards;
+}
+
+.sidebar-in-right {
+  animation: slideIn-right 0.3s ease-in-out forwards;
+}
+
+.sidebar-out-right {
+  animation: slideOut-right 0.3s ease-in-out forwards;
 }

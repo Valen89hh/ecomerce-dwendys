@@ -5,7 +5,7 @@ interface SearchProps {
 const Search: React.FC<SearchProps> = ({ customStyle = "" }) => {
   return (
     <div
-      className={`sm:w-[400px]  flex background-3 p-2 rounded-md space-x-2 focus-within:shadow-lg transition-shadow ${customStyle}`}
+      className={`sm:w-[400px]  flex bg-background-3 p-2 rounded-md space-x-2 focus-within:shadow-lg transition-shadow ${customStyle}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +28,9 @@ const Search: React.FC<SearchProps> = ({ customStyle = "" }) => {
             border-none 
             outline-none 
             bg-transparent
-            placeholder-[#666]
+            placeholder-secondary
             text-sm
-            HEading"
+            text-heading"
       />
     </div>
   );
